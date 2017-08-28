@@ -51,6 +51,7 @@ public class Game extends JPanel implements Runnable {
 	}
 
 	public void run() {
+		System.out.println("GAME START!");
 		try{
 			for(int i = 0; i < monsterList.size(); i++){
 				monsterList.get(i).start();
