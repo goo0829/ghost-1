@@ -1,4 +1,4 @@
-package new_ghost_01;
+package new_ghost_02;
 
 import java.awt.Container;
 import java.awt.Graphics;
@@ -12,7 +12,7 @@ public class Main extends JFrame {
 	
 	private Container contentpane;
 	private Menu menu;
-	private Game game;
+	private static Game game;
 	
 	public Main() {
 		setTitle("GHOST");
@@ -42,7 +42,6 @@ public class Main extends JFrame {
 		game = new Game(this);
 		game.setBounds(0, 0, WIDTH, HEIGHT);
 		contentpane.add(game);
-		
 		repaint();
 		
 	}
